@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/article.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Day of Valor</title>
+  </head>
+  <body>
+    <!-- Back Button -->
+    <div class="button-container">
+      <a href="./main.html">
+        <button class="back-btn">Back</button>
+      </a>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header">
+      <h1>Day of Valor in the Philippines</h1>
+      <p class="subtitle">
+        Commemorating the bravery of Filipino and American soldiers during WWII
+      </p>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="main-content">
+      <article class="content">
+        <h2>Introduction</h2>
+        <img src="../img/day_valor.jpg" alt="Mount Samat Shrine" width="750px" height="500px">
+        <p>
+          The Day of Valor, known as "Araw ng Kagitingan" in the Philippines,
+          honors the courage of the Filipino and American soldiers who bravely
+          defended Bataan in 1942. This national holiday celebrates their
+          sacrifices and the enduring spirit of valor.
+        </p>
+
+        <h2>Historical Significance</h2>
+        <p>
+          Observed every April 9, the Day of Valor commemorates the tragic
+          Bataan Death March, where thousands of Filipino and American prisoners
+          of war endured extreme hardships. The day stands as a reminder of the
+          resilience and unity of Filipinos during one of the darkest times in
+          the country’s history.
+        </p>
+
+        <h2>Modern Commemorations</h2>
+        <p>
+          Today, the Day of Valor is marked by ceremonies and events, especially
+          at the Mount Samat Shrine in Bataan, where government officials,
+          veterans, and citizens gather to honor the memories of the fallen
+          heroes.
+        </p>
+        <img
+          src="../img/day_valor1.jpg"
+          alt="Ceremony"
+          style="width: 700px; height: 500px; justify-content: center"
+        />
+      </article>
+    </main>
+
+    <!-- Audio Player -->
+    <div class="audio-player">
+      <audio
+        id="myAudio"
+        src="../audio/testing2.mp3"
+        type="audio/mp3"
+        autoplay
+      ></audio>
+      <button id="playPauseBtn" onclick="togglePlay()">
+        <i class="fas fa-pause"></i>
+      </button>
+      <span id="currentTime">0:00</span>
+      <input
+        type="range"
+        id="progressSlider"
+        value="0"
+        min="0"
+        max="100"
+        step="0.1"
+        style="width: 100%"
+      />
+      <span id="durationTime">0:00</span>
+      <button id="muteBtn" onclick="toggleMute()">
+        <i class="fas fa-volume-up"></i>
+      </button>
+      <input
+        type="range"
+        id="volumeControl"
+        min="0"
+        max="1"
+        step="0.1"
+        value="1"
+      />
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2024 Willie M. Bonavente. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Audio Controls -->
+    <script src="../audio/audioController.js"></script>
+  </body>
+</html>

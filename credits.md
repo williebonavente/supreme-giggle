@@ -1,0 +1,1 @@
+This file provides attribution for images, audio files, icons, and other resources used in this project. All assets are either licensed for reuse, fall under fair use, or are credits to the owner.

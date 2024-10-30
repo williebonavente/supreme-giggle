@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/article.css" />
+    <!-- Font Awesome CSS for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Bonifacio Day</title>
+  </head>
+  <body>
+    <!-- Back Button -->
+    <div class="button-container">
+      <a href="./main.html">
+        <button class="back-btn">Back</button>
+      </a>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header">
+      <h1>Bonifacio Day</h1>
+      <p class="subtitle">
+        Celebrating the life and bravery of Andres Bonifacio
+      </p>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="main-content">
+      <article class="content">
+        <h2>Introduction</h2>
+        <img src="../img/bonifacio.jpg" alt="Andres Bonifacio Monument" />
+        <p>
+          Bonifacio Day, celebrated every November 30, honors the birth and
+          heroism of Andres Bonifacio, the "Father of the Philippine
+          Revolution." Bonifacio’s courage and leadership sparked the revolution
+          for Philippine independence.
+        </p>
+
+        <h2>Legacy of Bonifacio</h2>
+        <p>
+          Ceremonies and gatherings are held nationwide to honor Bonifacio’s
+          contributions to the country's freedom. Bonifacio Day serves as a
+          reminder of the sacrifices made for Philippine independence.
+        </p>
+      </article>
+    </main>
+
+    <div class="audio-player">
+      <audio
+        id="myAudio"
+        src="../audio/testing6.mp3"
+        type="audio/mp3"
+        autoplay
+      ></audio>
+      <!-- Play/Pause Button -->
+      <button id="playPauseBtn" onclick="togglePlay()">
+        <i class="fas fa-pause"></i>
+      </button>
+
+      <span id="currentTime">0:00</span>
+      <!-- Progress Slider -->
+      <input
+        type="range"
+        id="progressSlider"
+        value="0"
+        min="0"
+        max="100"
+        step="0.1"
+        style="width: 100%"
+      />
+      <span id="durationTime">0:00</span>
+      <!-- Mute Button -->
+      <button id="muteBtn" onclick="toggleMute()">
+        <i class="fas fa-volume-up"></i>
+      </button>
+
+      <!-- Volume Slider -->
+      <input
+        type="range"
+        id="volumeControl"
+        min="0"
+        max="1"
+        step="0.1"
+        value="1"
+      />
+    </div>
+    <script src="../audio/audioController.js"></script>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2024 Willie M. Bonavente. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/article.css" />
+    <!-- Font Awesome CSS for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  <title>Independence Day</title>
+</head>
+<body>
+  <!-- Back Button -->
+  <div class="button-container">
+    <a href="./main.html">
+      <button class="back-btn">Back</button>
+    </a>
+  </div>
+
+  <!-- Header Section -->
+  <header class="header">
+    <h1>Philippine Independence Day</h1>
+    <p class="subtitle">Celebrating freedom and national pride</p>
+  </header>
+
+  <!-- Main Content Section -->
+  <main class="main-content">
+    <article class="content">
+      <h2>Introduction</h2>
+      <img src="../img/Philippines_Aguinaldo_flag_(obverse).jpg" alt="Philippine Flag" />
+      <p>
+        Independence Day, celebrated on June 12, marks the Philippines' declaration of independence from Spanish rule in 1898. This day is a tribute to the nation’s journey toward freedom and self-determination.
+      </p>
+
+      <h2>Modern Celebrations</h2>
+      <img src="../img/ph_flag1.jpg" alt="Philippine Flag" />
+
+      <p>
+        The day is celebrated with flag-raising ceremonies, parades, and tributes to heroes across the country. It fosters a sense of patriotism and appreciation for the sacrifices made to achieve independence.
+      </p>
+    </article>
+  </main>
+  <div class="audio-player">
+    <audio id="myAudio" src="../audio/testing4.mp3" type="audio/mp3" autoplay></audio>
+    <!-- Play/Pause Button -->
+    <button id="playPauseBtn" onclick="togglePlay()">
+      <i class="fas fa-pause"></i>
+    </button>
+
+    <span id="currentTime">0:00</span>
+    <!-- Progress Slider -->
+    <input
+      type="range"
+      id="progressSlider"
+      value="0"
+      min="0"
+      max="100"
+      step="0.1"
+      style="width: 100%"
+    />
+    <span id="durationTime">0:00</span>
+    <!-- Mute Button -->
+    <button id="muteBtn" onclick="toggleMute()">
+      <i class="fas fa-volume-up"></i>
+    </button>
+
+    <!-- Volume Slider -->
+    <input
+      type="range"
+      id="volumeControl"
+      min="0"
+      max="1"
+      step="0.1"
+      value="1"
+    />
+  </div>
+  <script src="../audio/audioController.js"></script>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Willie M. Bonavente. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

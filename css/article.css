@@ -1,0 +1,134 @@
+/* Reset basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header styling */
+.header {
+  text-align: center;
+  padding: 2rem;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.header .subtitle {
+  font-size: 1.2rem;
+  color: #e2e6ea;
+}
+
+/* Main content styling */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.content h2 {
+  font-size: 1.8rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  margin-bottom: 1rem;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+/* Footer styling */
+.footer {
+  text-align: center;
+  justify-content: center;
+  padding-top: 1.2rem;
+  color: #000;
+  display: flex;
+}
+
+/* Audio Player */
+.audio-player {
+  justify-items: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* width: 100%; */
+  max-width: 400px;
+}
+
+.audio-player button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #007bff;
+}
+
+.audio-player button:hover {
+  color: #0056b3;
+}
+
+#volumeControl {
+  width: 100px;
+  cursor: pointer;
+}
+#testingAudio {
+  width: 100%; /* Full width or any size you prefer */
+  margin-top: 10px; /* Adjust margin for spacing */
+}
+
+progress {
+  height: 10px; /* Adjust height */
+  appearance: none; /* Remove default styles */
+}
+
+progress::-webkit-progress-bar {
+  background: #f3f3f3; /* Background color */
+}
+
+progress::-webkit-progress-value {
+  background: #007bff; /* Progress color */
+}
+
+/* Wrapper styling for left alignment */
+.button-container {
+  align-self: flex-start; /* Aligns the container to the left */
+  padding: 1rem; /* Optional padding */
+}
+
+/* Button styling */
+.back-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #0056b3;
+}

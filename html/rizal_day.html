@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/article.css" />
+      <!-- Font Awesome CSS for icons -->
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Rizal Day</title>
+  </head>
+  <body>
+    <!-- Back Button -->
+    <div class="button-container">
+      <a href="./main.html">
+        <button class="back-btn">Back</button>
+      </a>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header">
+      <h1>Rizal Day</h1>
+      <p class="subtitle">Honoring the national hero, Dr. Jose Rizal</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="main-content">
+      <article class="content">
+        <h2>Introduction</h2>
+        <img
+          src="../img/rizal.jpg"
+          alt="Jose Rizal Monument"
+          width="750px"
+          height="500px"
+        />
+        <p>
+          Rizal Day, celebrated every December 30, commemorates the life and
+          contributions of Dr. Jose Rizal, the Philippines’ national hero, who
+          fought for reform and the empowerment of his countrymen.
+        </p>
+
+        <h2>Celebrations and Memorials</h2>
+        <img
+          src="../img/rizal1.jpg"
+          alt="Jose Rizal Monument"
+          width="750px"
+          height="500px"
+        />
+        <p>
+          Ceremonies are held at Rizal Park and in cities nationwide, honoring
+          his ideals and dedication to the country. Rizal Day reflects the
+          importance of education, nationalism, and reform.
+        </p>
+      </article>
+    </main>
+
+    <!-- Placeholder for the audio player -->
+    <div class="audio-player">
+      <audio
+        id="myAudio"
+        src="../audio/testing8.mp3"
+        type="audio/mp3"
+        autoplay
+      ></audio>
+      <!-- Play/Pause Button -->
+      <button id="playPauseBtn" onclick="togglePlay()">
+        <i class="fas fa-pause"></i>
+      </button>
+
+      <span id="currentTime">0:00</span>
+      <!-- Progress Slider -->
+      <input
+        type="range"
+        id="progressSlider"
+        value="0"
+        min="0"
+        max="100"
+        step="0.1"
+        style="width: 100%"
+      />
+      <span id="durationTime">0:00</span>
+      <!-- Mute Button -->
+      <button id="muteBtn" onclick="toggleMute()">
+        <i class="fas fa-volume-up"></i>
+      </button>
+
+      <!-- Volume Slider -->
+      <input
+        type="range"
+        id="volumeControl"
+        min="0"
+        max="1"
+        step="0.1"
+        value="1"
+      />
+    </div>
+
+    <script src="../audio/audioController.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2024 Willie M. Bonavente. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

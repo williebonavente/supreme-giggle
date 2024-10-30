@@ -1,0 +1,132 @@
+/* Reset basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base styling */
+body {
+  font-family:  "Roboto", serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #000;
+}
+
+/* Header styling */
+.header {
+  text-align: center;
+  padding: 2rem;
+  background: #000;
+  color: #fff;
+}
+
+.header h1 {
+    font: 700 6rem "Roboto", sans-serif;
+}
+
+.header .subtitle {
+  padding-top: 20px;
+  font-size: 1.2rem;
+  color: #e2e6ea;
+}
+
+/* Main content styling */
+.main-content {
+  display: flex;
+  border-radius: 10px;
+  border: 0px solid #942f2f;
+  background: linear-gradient(135deg, #fafafa, rgba(249, 249, 249, 0.908));
+  background-size: 400% 400%;
+  animation: backgroundAnimation 1s ease infinite;
+  justify-content: center;
+  padding: 5rem;
+  flex: 1;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 25%;
+  }
+  50% {
+    background-position: 100% 10%;
+  }
+  100% {
+    background-position: 25% 50%;
+  }
+}
+
+/* Holiday List styling */
+.holiday-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Holiday card styling */
+.holiday-card {
+  background-color: #fff;
+  border: 1px solid #3e2424;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease box-shadow 0.3s ease;
+}
+
+.holiday-card:hover {
+  transform: translateY(1px) scale(1.06);
+  box-shadow: 12px 12px 12px rgba(71, 61, 54, 0.15);
+}
+
+.holiday-card h2 {
+  font-size: 1.5rem;
+  animation: slideIn 0.8s ease-out forwards;
+  color: #007bff;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.holiday-card .date {
+  font-weight: bold;
+  color: #6c757d;
+}
+
+.holiday-card .description {
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+/* Link styling */
+.holiday-link {
+  text-decoration: none;
+  color: inherit;
+  padding: 0;
+  display: flex;
+  margin: 0;
+}
+
+/* Footer styling */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #080808;
+  color: #fff;
+}
+
+/* Audio */
+.audio {
+  display: flex;
+}
+

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/article.css" />
+    <!-- Font Awesome CSS for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <title>New Year's Day</title>
+  </head>
+  <div class="button-container">
+    <a href="./main.html">
+      <button class="back-btn">Back</button>
+    </a>
+  </div>
+
+  <body>
+    <header class="header">
+      <h1>History of New Year's Eve in the Philippines</h1>
+      <p class="subtitle">A celebration of traditions and culture</p>
+    </header>
+
+    <main class="main-content">
+      <article class="content">
+        <h2>Introduction</h2>
+        <img src="../img/new_years_eve.jpg" alt="Fireworks" />
+        <p>
+          New Year's Eve in the Philippines is a vibrant celebration filled with
+          rich traditions and customs that bring families together to welcome
+          the new year with hope and joy.
+        </p>
+        <img
+          src="../img/new_years_eve1.jpg"
+          alt="Fireworks"
+          height="500px"
+          width="750px"
+        />
+        <h2>Historical Background</h2>
+        <p>
+          The celebration of New Year's Eve dates back to pre-colonial times,
+          where Filipinos would hold festivities to celebrate the start of the
+          lunar calendar. Many Filipino people unite on New Year’s Eve, which is
+          on December 31, to celebrate a midnight meal known as the Media Noche.
+          It is also common to stay awake to greet the coming of the New Year.
+          New Year’s Day is also characterized by Filipinos lighting fireworks
+          and making a lot of noise to drive away evil spirits. This belief
+          originated from the Chinese. The elderly encourage children to jump at
+          the stroke of midnight so that they would grow up tall. Many people
+          display 12 circular fruits and wear clothing with polka dots to
+          symbolize money. It is also popular practice to open all the doors and
+          windows at the stroke of midnight to let in the good luck. Many
+          Filipino families also read the Christian bible and attend a church
+          midnight mass. It is common for many Filipinos to blend religion and
+          superstition in celebrating New Year’s Day. The New Year’s Day/New
+          Year’s Eve celebrations start on December 31 and continue through to
+          January 1. New Year’s Day in the Philippines is short but uniquely
+          celebrated throughout the country. This is also the time of the year
+          when many Filipino families get together and strengthen their family
+          ties. New Year’s Day in the Philippines is a joyful holiday that is
+          characterized with the intermarriage of religion and paganism which
+          are the attributes of a once Hispanic Philippine Society.
+        </p>
+
+        <h2>Modern Traditions</h2>
+        <p>
+          Today, Filipinos celebrate New Year's Eve with various customs, such
+          as fireworks, family gatherings, and the iconic “Media Noche” feast,
+          symbolizing abundance and prosperity for the coming year.
+        </p>
+        <img
+          src="../img/new_years_eve2.jpg"
+          alt="New Years Eve"
+          style="justify-content: center; width: 500px; height: 500px"
+        />
+        <h2>Symbols</h2>
+        <p>
+          Symbolize New Year’s Day with their visions of how the start of the
+          New Year opens opportunities for a bountiful life. This is the reason
+          why the Filipino dining table which is the focal point of this holiday
+          in that the table is abundant with food that comes in round or
+          circular shapes to represent money. Fireworks also symbolize driving
+          away bad luck during New Year’s Day.
+        </p>
+      </article>
+    </main>
+
+    <div class="audio-player">
+      <audio id="myAudio" src="../audio/testing1.mp3" type="audio/mp3" autoplay></audio>
+      <!-- Play/Pause Button -->
+      <button id="playPauseBtn" onclick="togglePlay()">
+        <i class="fas fa-pause"></i>
+      </button>
+
+      <span id="currentTime">0:00</span>
+      <!-- Progress Slider -->
+      <input
+        type="range"
+        id="progressSlider"
+        value="0"
+        min="0"
+        max="100"
+        step="0.1"
+        style="width: 100%"
+      />
+      <span id="durationTime">0:00</span>
+      <!-- Mute Button -->
+      <button id="muteBtn" onclick="toggleMute()">
+        <i class="fas fa-volume-up"></i>
+      </button>
+
+      <!-- Volume Slider -->
+      <input
+        type="range"
+        id="volumeControl"
+        min="0"
+        max="1"
+        step="0.1"
+        value="1"
+      />
+    </div>
+    <footer class="footer">
+      <p>&copy; 2024 Willie M. Bonavente. All Rights Reserved.</p>
+    </footer>
+    <script src="../audio/audioController.js"></script>
+
+  </body>
+</html>
